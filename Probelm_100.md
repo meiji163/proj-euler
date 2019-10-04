@@ -11,10 +11,10 @@ where a = 2n-1 and b = 2m-1. This is a *negative Pell's equation*. Clearly the f
 <a href="https://www.codecogs.com/eqnedit.php?latex=(a_1&plus;\sqrt{2}\cdot&space;b_1)^n&space;=&space;a_n&space;&plus;&space;\sqrt{2}&space;\cdot&space;b_n" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(a_1&plus;\sqrt{2}\cdot&space;b_1)^n&space;=&space;a_n&space;&plus;&space;\sqrt{2}&space;\cdot&space;b_n" title="(a_1\sqrt{2}\cdot b_1)^n = a_n + \sqrt{2} \cdot b_n" /></a>
 where n>1 is odd. For a proof, see the fifth theorem of [Ben Lynn's Pell's Equation Notes](https://crypto.stanford.edu/pbc/notes/contfrac/pell.html). The theorem gives us a double recurrence: a<sub>n+1</sub> =  a<sub>n</sub> + 2 b<sub>n</sub> and b<sub>n+1 </sub> =b<sub>n</sub> + a<sub>n</sub>. It is now a simple matter to get a solution with n>10<sup>12</sup>.
 
-  $ time ./p100.py <br>
-  756872327473 <br>
-  real	0m0.047s <br>
-  user	0m0.042s <br>
-  sys	0m0.004s <br>
+    $ time ./p100.py <br>
+    756872327473 <br>
+    real	0m0.047s <br>
+    user	0m0.042s <br>
+    sys	0m0.004s <br>
 
 
