@@ -2,7 +2,7 @@
 >The next such arrangement, for which there is exactly 50% chance of taking two blue discs at random, is a box containing eighty-five blue discs and thirty-five red discs.
 >By finding the first arrangement to contain over 10<sup>12</sup> = 1,000,000,000,000 discs in total, determine the number of blue discs that the box would contain.
 
-If n is the total number of discs and m is the number of blue discs, we must solve 
+If n is the total number of discs and m is the number of blue discs, we must solve <br>
 <a href="https://www.codecogs.com/eqnedit.php?latex=\dfrac{m}{n}\cdot&space;\dfrac{m-1}{n-1}=\dfrac{1}{2}&space;\iff&space;2m^2-2&space;=&space;n^2&space;-n" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dfrac{m}{n}\cdot&space;\dfrac{m-1}{n-1}=\dfrac{1}{2}&space;\iff&space;2m^2-2&space;=&space;n^2&space;-n" title="\dfrac{m}{n}\cdot \dfrac{m-1}{n-1}=\dfrac{1}{2} \iff 2m^2-2 = n^2 -n." /></a> <br>
 for n,m positive integers.
 This is a quadratic Diophantine equation, which we rewrite as <br>
