@@ -26,7 +26,7 @@ The number of increasing non-negative integers with at most _n_ digits is theref
 
 by the [Hockey Stick identity](https://en.wikipedia.org/wiki/Hockey-stick_identity). A similar argument shows that the number of decreasing numbers is C(n+10,10).  Taking into account overlap and discarding 0, the total number of non-bouncy numbers with at most _n_ digits is 
 
-<math>C(n+9,9) + C(n+10,10) - 10n - 2.<math>
+<math>C(n+9,9) + C(n+10,10) - 10n - 2.</math>
 
     $ time ./p113.py 
 	51161058134250
