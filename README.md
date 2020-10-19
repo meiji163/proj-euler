@@ -1,4 +1,9 @@
 # ProjectEuler
-Solutions for selected Project Euler problems. **Do not read if you want to solve the problem yourself first (obviously)**. I aim to give relatively complete mathematical proof when warranted. IMHO, "This just happens to give me the right answer" or "I blackboxed a bunch of math I don't understand" **is not a solution**. 
+Solutions for selected Project Euler problems. **Do not read if you want to solve the problem yourself first (obviously)**. 
+My rules for solutions are: 
+*No "blackboxing" math
+*Only use standard libraries
+*program finishes in < 60s (Project Euler rule)
 
-Problem_**n**.md explains the solution to problem **n** and p**n**.py or p**n**.cpp contains the code.
+If mathematical details are needed, the explanation for problem **n** is in Problem_**n**.md. 
+
