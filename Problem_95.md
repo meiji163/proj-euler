@@ -8,9 +8,12 @@
 Any function f: X -> X defined on a finite set X determines a directed graph where the nodes are elements x in X with edges (x,f(x)).
 This graph looks like disjoint cycles with trees attached; when we follow x, f(x), f(f(x)), ... we eventually get to a cycle.
 
-For this problem f(n) = sum of proper divisors, X is set of integers 0 ≤ n ≤ 1,000,000 and we want to find the longest cycle.
+For this problem f(n) = sum of proper divisors of n, X is set of integers 0 ≤ n ≤ 1,000,000 and we want to find the longest cycle.
 1. To calculate f(n) efficiently we find the prime factorization n = p<sub>1</sub> <sup>e1</sup> ... p<sub>k</sub> <sup> ek</sup>
-   using the sieve of eratosthenes. Then f(n)+n = (1+p<sub>1</sub> + p<sub>1</sub><sup>2</sup> + ... + p<sub>1</sub><sup>e1</sup>) ... (1+p<sub>k</sub> + ... + p<sub>k</sub><sup>ek</sup>) = (1-p<sub>1</sub><sup>e1 + 1</sup>)(1-p<sub>1</sub>) ... (1-p<sub>k</sub><sup>ek +1)/(1-p<sub>k</sub>)
+   using the sieve of eratosthenes. Then the sum of all divisors including n is 
+(1+p<sub>1</sub> + p<sub>1</sub><sup>2</sup> + ... + p<sub>1</sub><sup>e1</sup>) ... (1+p<sub>k</sub> + ... + p<sub>k</sub><sup>ek</sup>) = (1-p<sub>1</sub><sup>e1 + 1</sup>)(1-p<sub>1</sub>) ... (1-p<sub>k</sub><sup>ek +1</sup>)/(1-p<sub>k</sub>)
+which can be seen from multiplying out the geometric sequences; each term is a divisor of n.
+
 2. To find the cycles we use [Brent's cycle-detection algorithm](https://en.wikipedia.org/wiki/Cycle_detection#Brent's_algorithm) on the sequence of iterates n, f(n), f(f(n)), ... until all integers have been visited.
 
 Most integers end at 1 (period = 0). The others lead to perfect numbers (period = 1) or amicable numbers (period = 2).
@@ -20,6 +23,7 @@ Interestingly, there is only one long cycle with period 28.
 275444 243760 376736 381028 285778 152990 122410 97946 48976 45946 22976 22744 19916 17716 
 
     $ time ./p95
+    14316
     real	0m1.063s
     user	0m1.020s
     sys	0m0.008s
