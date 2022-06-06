@@ -1,5 +1,6 @@
 #lang racket
 
+;; rect-count is sum_i sum_j i*j 
 (define (rect-count n m)
   (/ (* m (add1 m) n (add1 n)) 4))
 
@@ -14,4 +15,4 @@
           '()))))
   ans)
 
-(display (solve))y
+(display (solve))
