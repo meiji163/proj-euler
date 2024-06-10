@@ -4,5 +4,6 @@
 tmp/
 *.cmi
 *.cmo
+*.cmx
 *.o
 *.hi
